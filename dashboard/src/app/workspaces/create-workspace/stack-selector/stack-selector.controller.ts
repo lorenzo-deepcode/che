@@ -257,6 +257,7 @@ export class StackSelectorController {
       if (!stack.workspaceConfig.defaultEnv) {
         return this.supportedRecipeTypes.indexOf(CheRecipeTypes.NOENVIRONMENT) !== -1;
       }
+      debugger;
       
       const defaultEnvName = stack.workspaceConfig.defaultEnv,
         defaultEnv = stack.workspaceConfig.environments[defaultEnvName],
